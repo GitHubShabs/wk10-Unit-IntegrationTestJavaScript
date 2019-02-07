@@ -12,7 +12,7 @@ describe('calculator', function () {
   })
 
 
-// write unit test for calculator.add() - add 1+4 =5
+// write unit test for calculator.add() - add 1+4=5
   it('it should add numbers', function(){
     calculator.previousTotal = 4;
     calculator.add(1);
@@ -20,7 +20,7 @@ describe('calculator', function () {
     assert.equal(actual, 5)
   })
 
-  // write unit test for calculator.subract() - minus 7-4 =3
+  // write unit test for calculator.subract() - minus 7-4=3
     it('it should subtract numbers', function(){
       calculator.previousTotal = 7;
       calculator.subtract(4);
@@ -45,11 +45,11 @@ describe('calculator', function () {
     })
 
     // calculator.numberClick() - concatenate multiple number button clicks
-    // it('concatenate multiple number button clicks', function(){
-    //   calculator.numberClick = 0;
-    //   const actual = calculator.newTotal;
-    //   assert.equal(actual, 0)
-    // })
+    it('concatenate multiple number button clicks', function(){
+      calculator.runningTotal = 0;
+      const actual = calculator.newTotal;
+      assert.equal(actual, true)
+    })
 
 });
 
