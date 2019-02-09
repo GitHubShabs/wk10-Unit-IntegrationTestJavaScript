@@ -61,11 +61,11 @@ describe('calculator', function () {
     });
 //
 //     // calculator.clearClick() - clear the running total without affecting the calculation
-//     it('clear the running total without affecting the calculation', function(){
-//       calculator.clearClick
-//       const actual = calculator.runningTotal;
-//       assert.equal(actual, 0)
-//     });
+    it('clear the running total without affecting the calculation', function(){
+      calculator.clearClick(0);
+      const actual = calculator.runningTotal;
+      assert.equal(actual, 0)
+    });
 //
 //
 });
